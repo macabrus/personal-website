@@ -1,0 +1,21 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@dev9.eindigo.net:222/bernard/personal-website.git"
+  },
+  "author": "Bernard Crnković",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "serve-index": "^1.9.1"
+  }
+}
