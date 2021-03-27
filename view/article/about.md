@@ -10,10 +10,11 @@
 2. [Mr. Robot](https://en.wikipedia.org/wiki/Mr._Robot) (1st & 2nd season only)
 
 ## My Favorite music
-- Endless Dive 
-- Metallica
-- Ghost
+- [Endless Dive](https://endlessdive.bandcamp.com/album/endless-dive)
+- [Metallica](https://www.metallica.com)
+- [Ghost](https://ghost-official.com)
 
+![Endless Dive Album Cover](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ff4.bcbits.com%2Fimg%2Fa4059158832_5.jpg&f=1&nofb=1)
 
 ## Here is a beautiful haiku
 > Plum flower temple:  
