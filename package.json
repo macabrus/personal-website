@@ -4,6 +4,7 @@
   "description": "My personal website",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon -i view/ -i node_modules/ -i assets/ -i data/ -e js app.js",
     "start": "node app.js",
     "test": "test"
   },
@@ -14,8 +15,9 @@
   "author": "Bernard Crnković",
   "license": "UNLICENSED",
   "dependencies": {
-    "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "serve-index": "^1.9.1"
+    "nunjucks": "^3.2.3",
+    "serve-index": "^1.9.1",
+    "showdown": "^1.9.1"
   }
 }
