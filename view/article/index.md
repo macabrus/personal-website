@@ -1,7 +1,7 @@
 
 # Welcome to my website 🌊
 
-_Work in progress!_
+<div class="marquee"><i>Under construction</i></div>
 
 [About me](/about)  
 [Projects](/projects)  
