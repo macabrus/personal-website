@@ -1,7 +1,11 @@
 const express = require('express');
 const serveIndex = require('serve-index');
 const path = require('path');
+const dotenv = require('dotenv');
 const nunjucks = require('nunjucks');
+
+dotenv.config();
+
 var showdown = require('showdown'),
   converter = new showdown.Converter({ tables: true, strikethrough: true }),
   text = '# hello, markdown!',
@@ -52,4 +56,6 @@ app.use((err, req, res, next) => {
   res.render('index', { markdown: 'article/500.md', error: err });
 });
 
-app.listen(3000, () => console.log('Personal website listening on :3000'));
+app.listen(process.env.PORT, () => {
+  console.log(`Personal website listening on :${process.env.PORT}`);
+});
