@@ -17,6 +17,6 @@ class="rabbit">
 </label>
 <div class="background"></div>
 
-# TNN!!
+<!-- # TNN!! -->
 
-<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgamepedia.cursecdn.com%2Fterraria_gamepedia%2F4%2F47%2FCultistAnimation.gif%3Fversion%3D098e0990b1dbe57be8b3dc04430939c9&f=1&nofb=1">
+<!-- <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgamepedia.cursecdn.com%2Fterraria_gamepedia%2F4%2F47%2FCultistAnimation.gif%3Fversion%3D098e0990b1dbe57be8b3dc04430939c9&f=1&nofb=1"> -->
