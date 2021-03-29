@@ -4,6 +4,7 @@ const serveMarkdown = require('./articles');
 const { join } = require('path');
 const dotenv = require('dotenv');
 const nunjucks = require('nunjucks');
+const error = require('./errors');
 dotenv.config();
 
 
@@ -26,43 +27,25 @@ njk.addFilter('md', (text) => {
 app.set('view engine', 'njk');
 app.set('views', 'view');
 app.use('/assets', express.static(join(__dirname, 'assets')));
-app.use('/', serveMarkdown({
-  baseDir: 'view/article',
-  templateName: 'article'
-}));
+
 
 const dataDir = join(__dirname, 'data');
 // app.use('/index', express.static(dataDir), serveIndex(dataDir, {
 //   template: join(__dirname, 'view/dir.html')
 // }));
 
-// respond with "hello world" when a GET request is made to the homepage
-// app.get('/', (req, res) => {
-//   res.render('index', {
-//     markdown: 'article/index.md',
-//   });
-// });
+app.use('/', serveMarkdown({
+  baseDir: 'view/article',
+  template: 'article'
+}));
 
+app.use(error.handle404({
+  template: '404'
+}));
 
-
-
-// app.get('/about', (req, res) => {
-//   res.render('index', {
-//     markdown: 'article/about.md',
-//   });
-// });
-
-// Handle 404
-// app.use((req, res) => {
-//   res.status(400);
-//   res.render('index', { markdown: 'article/404.md' });
-// });
-
-// // Handle 500
-// app.use((err, req, res, next) => {
-//   res.status(500);
-//   res.render('index', { markdown: 'article/500.md', error: err });
-// });
+app.use(error.handle500({
+  template: '500'
+}));
 
 app.listen(process.env.PORT, () => {
   console.log(`Personal website listening on :${process.env.PORT}`);

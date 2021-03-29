@@ -5,7 +5,7 @@
 
 I like forests 🦌🌳
 
-## Fav music
+## Favorite music
 - [Endless Dive](https://endlessdive.bandcamp.com/album/endless-dive)
 - [Silent Island](https://silentisland.bandcamp.com)
 - [Black Hill](https://blackhill1.bandcamp.com)
@@ -20,11 +20,11 @@ I like forests 🦌🌳
 |![...And Justice for All](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F10%2F56%2F22%2F1056225cb0935344c117ee766610acc9.jpg&f=1&nofb=1)||
 
 
-## Fav series
+## Favorite series
 - [Serial Experiments Lain](https://en.wikipedia.org/wiki/Serial_Experiments_Lain) by [Yasuyuki Ueda](https://en.wikipedia.org/wiki/Yasuyuki_Ueda)
 - [Death Note](https://en.wikipedia.org/wiki/Death_Note) by [Tsugumi Ohba](https://en.wikipedia.org/wiki/Tsugumi_Ohba)
 
-## Fav TV shows
+## Favorite TV shows
 1. [Breaking Bad](https://en.wikipedia.org/wiki/Breaking_Bad)
 2. [Mr. Robot](https://en.wikipedia.org/wiki/Mr._Robot) (1st & 2nd season only)
 

@@ -13,28 +13,20 @@ function isFile(path) {
 module.exports = function serveMarkdown(options) {
   return function (req, res, next) {
     const baseDir = options?.baseDir || __dirname;
-    const template = options?.templateName || 'article_template';
-    let path = join(baseDir, req.path);
+    let path = resolve(join(baseDir, req.path));
     if (!path.startsWith(resolve(baseDir))) {
-      next(); // not allowing parent directories to be listed
+      return next(); // not allowing parent directories to be listed
     }
+
+    const template = options?.template || 'article_template';
     if (isDir(path)) {
-      if (isFile(join(path, 'index.md')))
-        res.render(template, {
-          markdownData: fs.readFileSync(join(path, 'index.md'), 'utf8')
-        });
-      next();
+      path = join(path, 'index');
     }
-    if (isFile(path)) {
-      res.render(template, {
-        markdownData: fs.readFileSync(path, 'utf8')
-      });
-    }
-    else if (isFile(path + '.md')) {
-      res.render(template, {
+    if (isFile(path + '.md')) {
+      return res.render(template, {
         markdownData: fs.readFileSync(path + '.md', 'utf8')
       });
     }
-    next(); // no match
+    return next(); // no match
   };
 };

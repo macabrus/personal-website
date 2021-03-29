@@ -1,9 +1,7 @@
 
-# Welcome to my website 🌊
+# Welcome to my website
 <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.mpgh.net%2Fforum%2Fcustomavatars%2Favatar2131506_1.gif&f=1&nofb=1"
 class="rabbit">
-
-<div class="marquee"><i>Under construction</i></div>
 
 [About me](/about)  
 [Projects](/projects)  
@@ -11,11 +9,13 @@ class="rabbit">
 [Github](https://github.com/macabrus)  
 [LinkedIn](https://www.linkedin.com/in/bernard-crnković-36b86b173/)
 
-<input type="checkbox" id="toggle" class="toggle--checkbox" />
+<div class="marquee"><i>Under construction</i></div>
+
+<!-- <input type="checkbox" id="toggle" class="toggle--checkbox" />
 <label for="toggle" class="toggle--label">
   <span class="toggle--label-background"></span>
 </label>
-<div class="background"></div>
+<div class="background"></div> -->
 
 <!-- # TNN!! -->
 
