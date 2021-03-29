@@ -1,5 +1,8 @@
 
 # Welcome to my website
+
+---
+
 <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.mpgh.net%2Fforum%2Fcustomavatars%2Favatar2131506_1.gif&f=1&nofb=1"
 class="rabbit">
 
