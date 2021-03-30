@@ -1,8 +1,8 @@
-if [ -f pid.txt ]; do
+if [ -f pid.txt ]; then
   APP_PID=$(cat pid.txt)
   kill -0 "$APP_PID"
   wait "$APP_PID"
-endif
+fi
 git reset --hard HEAD
 eval `ssh-agent -s`
 ssh-add ~/.ssh/gitlab-bot
