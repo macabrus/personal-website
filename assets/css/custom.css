@@ -1,7 +1,11 @@
 body {
   background-color: #fff2e7;
   color: #373431;
+  /* DARK MODE */
+  /* background-color: #2d2d2d;
+  color: lightgray; */
 }
+
 .content {
   overflow:hidden;
   /* color: #0C2D48; */
@@ -35,7 +39,7 @@ a:active {
 
 hr {
   border: none;
-  border-top: 1px solid #373431;
+  border-top: 1px solid #c5bfb7;
 }
 
 blockquote {
@@ -57,12 +61,20 @@ img {
   width: 30%;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 td, th {
+  margin: 0;
+  border: 1px solid #c5bfb7;
   padding: 0 20px 0 20px
 }
 
 code {
-  border-radius: 10px;
+  padding: 2px;
+  background: #e2dcd5;
+  border-radius: 3px;
 }
 
 .marquee {
@@ -82,6 +94,7 @@ footer {
   background-color: lightgray;
   height: 300px;
 }
+
 
 a[href$='.pdf'] {
   background: transparent url(/assets/img/icon_pdf.gif) center left no-repeat;

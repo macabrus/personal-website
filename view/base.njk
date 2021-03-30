@@ -25,21 +25,26 @@
   <body>
     <script type="text/x-mathjax-config">
       MathJax
+        .Ajax
+        .config
+        .path["mhchem"] = "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.2";
+      MathJax
         .Hub
         .Config({
           extensions: ["tex2jax.js"],
           jax: [
-            "input/TeX", "output/SVG"
+            "input/TeX", "output/HTML-CSS"
           ],
-          tex2jax: {
+          tex: {
             inlineMath: [
               [
-                "$", "$"
+                "$$", "$$"
               ],
               [
                 "\\(", "\\)"
               ]
-            ]
+            ],
+            processEscapes: true
           },
           options: {
             enableMenu: false
@@ -47,7 +52,6 @@
         });
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
     <noscript>
       <div style="color:#CC0000; text-align:center">
         <b>Warning: <a href="http://www.mathjax.org/">MathJax</a>

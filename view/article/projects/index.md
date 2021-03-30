@@ -1,8 +1,14 @@
 
 # Projects
+
+---
+
 ## Software
-1. [Alchemy](https://play.google.com/store/apps/details?id=com.bc.alchemy) (Android/Java)
-2. Journal Reader (Python)
+1. [Alchemy](/projects/alchemy)
+    - written in Android/Java
+    - [Download from Google Play Store](https://play.google.com/store/apps/details?id=com.bc.alchemy)
+2. Journal Reader
+    - written in Python
 3. Mist
     - Client ([JavaFX](https://openjfx.io) + [Dagger](https://dagger.dev) + [Hibernate](http://hibernate.org))
     - Server ([Netty](https://netty.io)) implementation of secure chat application
@@ -16,13 +22,4 @@
       and plotting them in Java Swing GUI on laptop
 
 ## Music
-I also made some [music...](https://soundcloud.com/user-65822623)
-
-```js
-function add(a, b) {
-  return a + b
-}
-
-this.isSomeJavascript(some, parameters);
-fetch().then()
-```
+I also made some [music](https://soundcloud.com/user-65822623) using [Ableton Live](https://www.ableton.com)

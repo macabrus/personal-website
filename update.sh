@@ -1,4 +1,5 @@
-kill $(cat pid.txt)
+(sleep 1; kill $PID) &
+wait $PID
 git reset --hard HEAD
 eval `ssh-agent -s`
 ssh-add ~/.ssh/gitlab-bot
