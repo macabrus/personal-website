@@ -6,4 +6,4 @@ eval `ssh-agent -s`
 ssh-add ~/.ssh/gitlab-bot
 git pull
 npm i
-nohup npm start >logfile.txt 2>&1 & echo $! > pid.txt
+nohup node app.js >logfile.txt 2>&1 & echo $! > pid.txt
