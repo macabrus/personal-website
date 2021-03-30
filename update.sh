@@ -7,4 +7,4 @@ ssh-add ~/.ssh/gitlab-bot
 git pull
 npm i
 npm start >logfile.txt 2>&1 &
-echo $! > pid.txt
+nohup npm start >logfile.txt 2>&1 & echo $! > pid.txt
