@@ -1,6 +1,9 @@
 if [ -f pid.txt ]; then
   APP_PID=$(cat pid.txt)
-  kill -0 "$APP_PID"
+  while kill -0 $APP_PID; do
+    echo 'waiting for process to finish' 
+    sleep 1
+  done
   wait "$APP_PID"
 fi
 git reset --hard HEAD
