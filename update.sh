@@ -1,10 +1,10 @@
 if [ -f pid.txt ]; then
   APP_PID=$(cat pid.txt)
-  while kill -0 $APP_PID; do
-    echo 'waiting for process to finish' 
+  kill $APP_PID
+  while ps -p $APP_PID; do
+    echo "waiting for process $APP_PID to finish"
     sleep 1
-  done
-  wait "$APP_PID"
+  done;
 fi
 git reset --hard HEAD
 eval `ssh-agent -s`
